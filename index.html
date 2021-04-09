@@ -33,7 +33,7 @@
 
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-5">
-          <img src="img/gus-compressed.jpg" alt="">
+          <img src="img/gus-compressed.jpg" alt="Picture of Gus Viola smiling">
         </div>
         <div class="col-lg-8 col-md-7">
           <div class="d-flex flex-column">
@@ -118,19 +118,133 @@
           <div class="card card-body py-5">
             <h3>What Have I Built?</h3>
             <p>A highlight of my projects.</p>
+            
+            <!-- First Row of Projects -->
             <div class="row no-gutters">
+
+                <!-- Project: Tracker Angular App -->
+                <div class="col-md-3">
+
+                  <!-- First, the Modal -->
+                  <div class="modal fade" id="trackerModal"> 
+                    <!-- tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Tracker Angular App</h4>
+                          
+                          <div class="projects">
+
+                            <a class="btn btn-outline-dark ml-3" role = "button" href="https://github.com/Gus-Viola/tracker-v1" target="_blank">
+                              <i class="fab fa-github"><span class="buttonText"> Github repo for this project</span></i>
+                            </a>
+                    
+                          <a class="btn btn-outline-success" role="button" href="https://trackerv1.gusviola.com">
+                            <i class="fa fa-heartbeat"><span class="buttonText"> Live Demo</span></i>
+                          </a>
+                    
+                        </div>
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/personal-tracker-800.png" alt="Form with empty fields of age, height, and monthly income" class="img-fluid"> 
+                          <!-- Optimal Overlay from https://codepen.io/yaphi1/pen/oNbEqGV -->
+                          <div class="top-left lead"  style="background: rgba(0, 0, 0, 0.5333);"> 
+                            <p><strong>Tech stack: Angular, NPM, JavaScript, Node.js; HTML5, CSS</strong></p>
+                            <p><strong>AWS back-end: Cognito, Lambda, DynamoDB, API Gateway, Cloudfront, Route53, S3</strong></p>
+                            <p>Tracker is a single-page Angular app which allows a logged-in user (via AWS Cognito)
+                              to privately save some personal information and compare to that of other users.
+                              The app uses an API Gateway I configured in AWS to access a Lambda function, which stores
+                              the information in a NoSQL DynamoDB database.</p>
+                            <p>Tracker is a 2021 project designed by Maximilian Schwarzmüller in his course 
+                              <a href="https://www.udemy.com/course/aws-serverless-a-complete-introduction/">AWS Serverless APIs & Apps</a>.
+                              The Angular front-end code is his and I adapted it, and connected to the back-end coded by me. </p>
+                            <p>This project showcases how I can setup and code with AWS Cognito, Lambda, DynamoDB and the API Gateway
+                              for a CRUD application.</p>
+                          </div>
+                          <!-- <a href="https://gusviola.com">This is an outside link</a> -->
+                          
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+                <!-- Second, the small and clickable project image -->
+                <a data-toggle ="modal" href="#trackerModal" class="button" title="Personal Tracker Angular App">
+                    <img src="img/personal-tracker-800.png" alt="Form with empty fields of age, height, and monthly income" class="img-fluid">
+                  </a>
+                </div>
+              
+
+              <!-- Project: MyReads React App -->
               <div class="col-md-3">
-    
-                <!-- Button trigger modal -->
-               <!-- <a data-toggle="modal" href="#myModal" class="button">Launch myModal Window</a> -->
-               
+
+                <!-- First, the Modal -->
+                <div class="modal fade" id="myreadsModal"> 
+                  <!-- tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">MyReads React App</h4>
+                        
+                        <div class="projects">
+
+                          <a class="btn btn-outline-dark ml-3" role = "button" href="https://github.com/Gus-Viola/reactnd-project-myreads-starter" target="_blank">
+                            <i class="fab fa-github"><span class="buttonText"> Github repo for this project</span></i>
+                          </a>
+                  
+                        <a class="btn btn-outline-success" role="button" href="https://myreads.gusviola.com">
+                          <i class="fa fa-heartbeat"><span class="buttonText"> Live Demo</span></i>
+                        </a>
+                  
+                      </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img src="img/myreads-react-800.png" alt="Screenshot of book covers in a React App" class="img-fluid"> 
+                        <!-- Optimal Overlay from https://codepen.io/yaphi1/pen/oNbEqGV -->
+                        <div class="top-left lead"  style="background: rgba(0, 0, 0, 0.5333);"> 
+                          <p><strong>Tech stack: React, NPM, JavaScript, API; HTML5, CSS</strong></p>
+                          <p><strong>AWS back-end: S3, Cloudfront, Route53</strong></p>
+                          <p>MyReads is a single-page React app which allows you to search books from a Udacity database. The books can be stored
+                            in three different shelves, and moved around. It is a showcase for my skills using the React DOM.</p>
+                          <p>MyReads is a 2018 project for my Udacity Nanodegree in Web Front-end, and was built upon the starter template found
+                              <a href="https://github.com/udacity/reactnd-project-myreads-starter">here</a>. 
+                              I added interactivity to the app by refactoring the static code from the template.</p>
+
+                        </div>
+                        <!-- <a href="https://gusviola.com">This is an outside link</a> -->
+                        
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div> -->
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <!-- Second, the small and clickable project image -->
+                <a data-toggle ="modal" href="#myreadsModal" class="button" title="MyReads React App">
+                  <img src="img/myreads-react-800.png" alt="Screenshot of book covers in a React App" class="img-fluid">
+                </a>
+              </div>
+
+              <!-- Project: Memory Match -->
+              <div class="col-md-3">
+
+                <!-- First, the Modal -->
                 <div class="modal fade" id="memoryModal"> 
                   <!-- tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title">Memory Match</h4>
-                       
+                        
                         <div class="projects">
 
                           <a class="btn btn-outline-dark ml-3" role = "button" href="https://github.com/Gus-Viola/fend-project-memory-game" target="_blank">
@@ -145,17 +259,17 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       </div>
                       <div class="modal-body">
-                        <img src="img/memory-match-800.png" alt="" class="img-fluid"> 
+                        <img src="img/memory-match-800.png" alt="Game of memory match with fontawesome icons instead of cards" class="img-fluid"> 
                         <!-- Optimal Overlay from https://codepen.io/yaphi1/pen/oNbEqGV -->
                         <div class="top-left lead"  style="background: rgba(0, 0, 0, 0.5333);"> 
                           <p><strong>Tech stack: JavaScript, jQuery; HTML5, CSS</strong></p>
                           <p><strong>AWS back-end: S3, Cloudfront, Route53</strong></p>
                           <p>Memory Match is a 2018 project for my Udacity Nanodegree in Web Front-end.</p>
                           <p>It is an implementation of the traditional game for children, but as it
-                             uses hundreds of FontAwesome icons for variety, it makes for a hard play.</p>
+                              uses hundreds of FontAwesome icons for variety, it makes for a hard play.</p>
                         </div>
                         <!-- <a href="https://gusviola.com">This is an outside link</a> -->
-                       
+                        
                       </div>
                       <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -165,23 +279,24 @@
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
 
-                <a data-toggle="modal" href="#memoryModal" class="button" title="Memory Match">
-                  <img src="img/memory-match-800.png" alt="" class="img-fluid">              
+                <!-- Second, the small and clickable project image -->
+                <a data-toggle="modal" href="#memoryModal" class="button" title="Memory Match on JavaScript">
+                  <img src="img/memory-match-800.png" alt="Game of memory match with fontawesome icons instead of cards" class="img-fluid">              
                 </a>
 
               </div>
 
-              <!-- Arcade Enter the Stream! -->
-
+              <!-- Project: Arcade Enter the Stream! -->
               <div class="col-md-3">
 
+                <!-- First, the Modal -->
                 <div class="modal fade" id="arcadeModal"> 
                   <!-- tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title">Arcade Game</h4>
-                       
+                        
                         <div class="projects">
 
                           <a class="btn btn-outline-dark ml-3" role = "button" href="https://github.com/Gus-Viola/frontend-nanodegree-arcade-game" target="_blank">
@@ -196,7 +311,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       </div>
                       <div class="modal-body">
-                        <img src="img/enter-stream-800.png" alt="" class="img-fluid"> 
+                        <img src="img/enter-stream-800.png" alt="Arcade game of girl crossing busy road with giant ladybugs" class="img-fluid"> 
                         <!-- Optimal Overlay from https://codepen.io/yaphi1/pen/oNbEqGV -->
                         <div class="top-left lead"  style="background: rgba(0, 0, 0, 0.5333);"> 
                           <p><strong>Tech stack: TypeScript, jQuery; HTML5, CSS</strong></p>
@@ -205,7 +320,7 @@
                           <p>It is a clone of Frogger or Crossy Road.</p>
                         </div>
                         <!-- <a href="https://gusviola.com">This is an outside link</a> -->
-                       
+                        
                       </div>
                       <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -215,22 +330,17 @@
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
 
-                <a data-toggle="modal" href="#arcadeModal" class="button" title="Arcade Game">
-                  <img src="img/enter-stream-800.png" alt="" class="img-fluid">
+                <!-- Second, the small and clickable project image -->
+                <a data-toggle="modal" href="#arcadeModal" class="button" title="Arcade Game on TypeScript">
+                  <img src="img/enter-stream-800.png" alt="Arcade game of girl crossing busy road with giant ladybugs" class="img-fluid">
                 </a>
               </div>
-              <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
-                  <img src="https://unsplash.it/600.jpg?image=254" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
-                  <img src="https://unsplash.it/600.jpg?image=255" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-    
+            
+            </div> 
+            <!-- End of First Row of Projects -->
+
+
+            <!-- Second Row of Projects -->    
             <div class="row no-gutters">
               <div class="col-md-3">
                 <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
@@ -253,6 +363,8 @@
                 </a>
               </div>
             </div>
+            <!-- End of Second Row of Projects -->
+         
           </div>
         </div>
 
@@ -477,12 +589,23 @@
     <div id="contact" class="collapse">
       <div class="card card-body bg-danger text-white py-5">
         <h2>Contact</h2>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+        <p class="lead">
+          You can contact me using  
+          <a href="#formName" class="text-white" data-toggle="tooltip" title="Contact Form">
+            the form below</a>, on 
+          <a href="https://www.linkedin.com/in/gusviola/" class="text-white" data-toggle="tooltip" title="LinkedIn">
+            LinkedIn</a>,
+          <a href="https://twitter.com/viola_gus" class="text-white"  data-toggle="tooltip" title="Twitter">
+            Twitter</a>, or
+          <a href="mailto:gus.viola@gatech.edu"  class="text-white" data-toggle="tooltip" title="Email">gus.viola@gatech.edu</a>.
+        </p>
+        <p class="lead">This contact form uses three AWS technologies: API Gateway, Lambda, and Simple Notification Service (SNS), a fully managed 
+          pub/sub messaging service, which will send me an email and an SMS message.</p>
       </div>
 
       <div class="card card-body py-5">
         <h3>Get In Touch</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos illo, dicta id voluptates enim.</p>
+
         <form>
           <div class="form-group">
             <div class="input-group input-group-lg">
@@ -491,7 +614,7 @@
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+              <input name="name" type="text" class="form-control bg-dark text-white" placeholder="Name" id="formName">
             </div>
           </div>
 
@@ -502,7 +625,7 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <input name="email" type="email" class="form-control bg-dark text-white" placeholder="Email">
             </div>
           </div>
 
@@ -513,7 +636,7 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea class="form-control bg-dark text-white" placeholder="Name"></textarea>
+              <textarea name="message" class="form-control bg-dark text-white" placeholder="Message"></textarea>
             </div>
           </div>
 
@@ -544,6 +667,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script src="js/folio.js"></script>
 
   <script>
     $('.port-item').click(function () {
